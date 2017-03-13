@@ -1,0 +1,105 @@
+\pdfoutput=1
+
+\documentclass{acm_proc_article-sp}
+
+% \pdfoutput=1
+
+\usepackage{mathrsfs}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=10mm,
+ right=10mm,
+ top=0.5in,
+ bottom=0.5in
+ }
+ 
+\usepackage{amsthm}
+\usepackage{eurosym}
+
+\def\bitcoinA{%
+  \leavevmode
+  \vtop{\offinterlineskip %\bfseries
+    \setbox0=\hbox{B}%
+    \setbox2=\hbox to\wd0{\hfil\hskip-.03em
+    \vrule height .3ex width .15ex\hskip .08em
+    \vrule height .3ex width .15ex\hfil}
+    \vbox{\copy2\box0}\box2}}
+ 
+\theoremstyle{definition}
+\newtheorem{definition}{Conjecture}[section]
+ 
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+ 
+ \DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+\makeatletter
+\def\@copyrightspace{\relax}
+\makeatother
+
+
+
+\begin{document}
+
+\title{Disintermediation of Inter-Blockchain Transactions}
+% \subtitle{[\textit{\large{Proposal for 20-30 Minute Presentation}}]}
+
+\numberofauthors{1} 
+\author{
+S. Matthew English, Fabrizio Orlandi, S\"{o}ren Auer\\
+       \affaddr{Fraunhofer Institut f\"{u}r Intelligente Analyse und Informationssysteme (IAIS)}\\
+       \affaddr{Rheinische Friedrich-Wilhelms-Universit\"{a}t Bonn}\\
+       \email{\{english, orlandi, auer\}@cs.uni-bonn.de}
+}
+
+\date{20 April 2013}
+
+
+
+\maketitle
+
+
+\bibliographystyle{abbrv}
+\bibliography{sample}
+
+
+
+\end{document}
+
+
+
+% As a mechanism to establish consensus in a distributed system amidst Byzantine actors the Bitcoin blockchain has demonstrated itself to be effective by the continued functionality of the multi-billion dollar payment network the technology sustains. Network participants have come to rely on a number of fundamental properties inherent to this system, they include a common prefix from which chains are extended, liveness i.e. the ability for new transaction to eventually gain admission into immutable record of past transactions, and trusted timestamping, among others. In the transference of value between two of such systems these properties are preserved only by cataloging the event on a third ledger which logs this transaction
+
+
+
+
+
+
+
+
+
+
+
+
+% Alice, 
+
+% Bob
+
+% Facilitators 1-n
+
+
+
+% Synchronoous: In the synchronous model, nodes operate in synchronous rounds. 
+% In each round, each node may send a message to the other nodes, receive the messages sent by the other nodes, and do some local computation. 
+
+
+
+
+% Byzantine: a node which can have arbitrary behaviour is called Byzantine.
+% This includes \enquote{anything imaginable}, e.g. not sending any messages at all, or sending different and wrong messages to different neighbours, or lying about the input value. 
+
+% Proof of Misbehaviour: 
